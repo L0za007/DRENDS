@@ -4,12 +4,12 @@ Data/
 Backup/
 Notebooks/
 # files
-*.png
-*.jpg    
-*.bmp
-*.blend
-*.mp4
-*.hdf5
+./*.png
+./*.jpg    
+./*.bmp
+./*.blend
+./*.mp4
+./*.hdf5
 # HPC
 *.out
 *.sh
