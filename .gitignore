@@ -1,0 +1,15 @@
+.vscode
+__pycache__/
+Data/
+Backup/
+Notebooks/
+# files
+*.png
+*.jpg    
+*.bmp
+*.blend
+*.mp4
+*.hdf5
+# HPC
+*.out
+*.sh

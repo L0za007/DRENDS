@@ -1,0 +1,12 @@
+opencv-python 
+tqdm 
+configargparse 
+matplotlib 
+ipykernel
+open3d
+tifffile
+trimesh
+imageio[ffmpeg]
+huggingface_hub
+ipympl
+h5py
