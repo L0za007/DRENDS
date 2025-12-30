@@ -67,22 +67,22 @@ DRENDS
 The calibration results can be recreated using the command below:
 ```
 conda activate DRENDS
-python Calibration --calib_dir path/to/the/Dataset/DRENDS/ExVivo --verbose
-python Calibration --calib_dir path/to/the/Dataset/DRENDS/Phantom --verbose
+python Calibration --calib_dir path/to/the/Dataset/DRENDS/ExVivo/Calibration --verbose
+python Calibration --calib_dir path/to/the/Dataset/DRENDS/Phantom/Calibration --verbose
 ```
 This command creates a `calibration.json` file containing all output parameters. The `--verbose` flag creates a log of the calibration, including rectified images of the reprojected patterns. More about the available functionalities can be seen by adding the flag `-h`. Some of the calibration configurations are in the file `./Calibration/config.json`.
 
 The command below can be used to generate the depth ground truth in a folder within the dataset for each modality.
 ```
 conda activate DRENDS
-python Processing --config_file .Postprocessing/exvivo-config.json --seq_dir path/to/the/Dataset/DRENDS/ExVivo/Seq00_Colon_Ext
-python Processing --config_file .Postprocessing/phantom-config.json --seq_dir path/to/the/Dataset/DRENDS/Phantom/Seq00_Colon_Ext
+python Processing --config_file ./Processing/exvivo-config.json --seq_dir path/to/the/Dataset/DRENDS/ExVivo/Seq00_Colon_Ext
+python Processing --config_file ./Processing/phantom-config.json --seq_dir path/to/the/Dataset/DRENDS/Phantom/Seq00_Colon_Ext
 ```
 The command below can also be used to run the processing pipeline on the whole dataset:
 ```
 conda activate DRENDS
-python Processing --config_file .Postprocessing/exvivo-config.json --seq_dir path/to/the/Dataset/DRENDS/ExVivo/*
-python Processing --config_file .Postprocessing/phantom-config.json --seq_dir path/to/the/Dataset/DRENDS/Phantom/*
+python Processing --config_file ./Processing/exvivo-config.json --seq_dir path/to/the/Dataset/DRENDS/ExVivo/*
+python Processing --config_file ./Processing/phantom-config.json --seq_dir path/to/the/Dataset/DRENDS/Phantom/*
 ```
 More details about the processing pipeline configuration can be found in `Processing/*config.json`. Additional functionalities can be found by adding the `-h` flag to any of the previous commands.
 ## 📋 Notes
