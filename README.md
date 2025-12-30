@@ -2,8 +2,8 @@
 <center> <h3>
  🌎 <a href="https://l0za007.github.io/DRENDS">Project page</a>.
  📝 <a href="">Paper</a>. 
- 💾 <a href="">Dataset</a>. 
- 📋 <a href="">Evaluation code</a>. 
+ 💾 <a href="https://zenodo.org/records/17598453">Dataset</a>. 
+ 📋 <a href="https://github.com/MattiPoli97/DRENDS_Eval">Evaluation code</a>. 
 </h3></center>
 This repository contains all the code to run the calibration of the cameras and the processing pipeline. The last one rectifies every frame in the videos and generates the ground-truth depth maps for each rectified frame, along with a mask for the pixels with valid ground-truth.
 
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 ## 🧾 Download and extract data
-The full dataset can be downloaded from [DRENDS-Zenodo](). Once the data is downloaded, follow the commands below to extract the data from the zip files and obtain the folder structure shown below.
+The full dataset can be downloaded from [DRENDS-Zenodo](https://zenodo.org/records/17598453). Once the data is downloaded, follow the commands below to extract the data from the zip files and obtain the folder structure shown below.
 ```
 unzip DRENDS.zip
 for f in DRENDS_ExVivo_*.zip; do 
@@ -30,6 +30,15 @@ for f in DRENDS_Phantom_*.zip; do
  unzip -o "$f" -d "DRENDS/Phantom/"
 done
 ```
+Additionally, if you wish to run the calibration pipeline. You can download the calibration data using the following comands or by accessing the following link [DRENDS-CalibrationData](https://www.dropbox.com/scl/fo/4q3vwun91ztr51i1s8iet/ABsH8qfCVCtimHB3UUnTe4o?rlkey=7jy4r3ai656o7rs8f3zfm1n7s&st=si9bym00&dl=0).
+```
+wget -q --content-disposition https://www.dropbox.com/scl/fi/j1yutthone5ws87qfey89/DRENDS_ExVivo_Calibration.zip?rlkey=i0659nlubmuq00w86mroctcvj&st=k7sz54c8&dl=1
+unzip -o "DRENDS_ExVivo_Calibration.zip" -d "DRENDS/ExVivo/"
+
+wget -q --content-disposition https://www.dropbox.com/scl/fi/5uq5j84g03u62oekwgh4b/DRENDS_Phantom_Calibration.zip?rlkey=eq9anmj6l85btokuzfrlcd85w&st=jqu9hjgp&dl=1
+unzip -o "DRENDS_Phantom_Calibration.zip" -d "DRENDS/Phantom/"
+```
+
 
 ## 📁 Data structure overview
 The dataset can be found at: ....
