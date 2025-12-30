@@ -1,0 +1,8 @@
+{
+    "calib_directory": "DRENDS/Phantom/Calibration",
+    "pattern_shape": [4, 3],
+    "square_size_mm": 15,
+    "calibration_samples": null,
+    "alpha": 0.0
+
+}

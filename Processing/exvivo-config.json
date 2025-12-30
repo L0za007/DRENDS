@@ -1,0 +1,29 @@
+{
+    "calibration_file":"calibration.json",
+    "seq_directory":"DRENDS/ExVivo/Seq00_Colon_Ext",
+    "mask_workspace": true,
+    "image_to_define_workspace": "Seq00_Colon_Ext/intensity/00000.png",
+    "remove_occlusions": true,
+    "depth_range": [0.01, 0.3],
+    "temporal_filtering": {
+        "enabled": true,
+        "win_size": 7,
+        "sigma_t": 3.0,
+        "sigma_r": 0.005,
+        "tau": 0.005
+    },
+    "spatial_filtering": {
+        "enabled": true,
+        "d": 12,
+        "sigma_s": 4.0,
+        "sigma_r_mm": 5.0
+    },
+    "normal_filtering": {
+        "enabled": true,
+        "theta": 60,
+        "bidirectional": false
+    },
+    "mask_tools": true,
+    "compensation_transform": true,
+    "denoise_rgb_videos": true
+}
