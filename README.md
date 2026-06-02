@@ -3,7 +3,7 @@
  🌎 <a href="https://l0za007.github.io/DRENDS">Project page</a>.
  📝 <a href="">Paper</a>. 
  💾 <a href="https://zenodo.org/records/17598453">Dataset</a>. 
- 📋 <a href="https://github.com/MattiPoli97/DRENDS_Eval">Evaluation code</a>. 
+ 📋 <a href="https://github.com/L0za007/DRENDS_Eval">Evaluation code</a>. 
 </h3></center>
 This repository contains all the code to run the calibration of the cameras and the processing pipeline. The last one rectifies every frame in the videos and generates the ground-truth depth maps for each rectified frame, along with a mask for the pixels with valid ground-truth.
 
