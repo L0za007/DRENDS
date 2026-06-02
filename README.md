@@ -95,10 +95,20 @@ More details about the processing pipeline configuration can be found in `Proces
 
 ## 📰 Cite
 ```
- @misc{DRENDS2025,
- title={DRENDS: A Dataset for Depth in Robotic Endoscopy with Dynamic Scenarios},
- author={Gerardo Loza and Mattia Magro and Benjamin Calmé and Junlei Hua nd Emanuele Ruffaldi  and Dominic Jones and Elena de Momi and Sharib Ali and Pietro Valdastri},
- archivePrefix={arXiv},
- year={2025}
- }
+@dataset{009_D_DRENDS,
+  author       = {Loza, Gerardo and
+                  Magro, Mattia and
+                  Calmé, Benjamin and
+                  Jones, Dominic and
+                  De Momi, Elena and
+                  Ali, Sharib and
+                  Valdastri, Pietro},
+  title        = {{DRENDS: A Dataset for Depth in Robotic Endoscopy with Dynamic Scenarios}},
+  month        = {nov},
+  year         = {2025},
+  publisher    = {Zenodo},
+  version      = {1.0},
+  doi          = {{https://doi.org/10.5281/zenodo.17598453}},
+  url          = {https://doi.org/10.5281/zenodo.17598453},
+}
 ```
